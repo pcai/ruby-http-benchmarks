@@ -1,4 +1,4 @@
-# http-memory-benchmarks
+# ruby-http-benchmarks
 
 Some benchmarks comparing memory usage among various http clients in ruby. The goal is to measure the memory usage of loading the library into the process AND making a single GET request to an arbitrary URL.
 
