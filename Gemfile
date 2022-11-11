@@ -6,3 +6,4 @@ gem "http", require: false
 gem "rest-client", require: false
 gem "httparty", require: false
 gem "puma", require: false
+gem 'get_process_mem'

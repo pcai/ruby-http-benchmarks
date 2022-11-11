@@ -1,9 +1,9 @@
-
+require 'get_process_mem'
 
 def profile(name)
-  memory_before = `ps -p #{Process::pid} -o rss`.split("\n")[1].chomp.to_i
+  memory_before = GetProcessMem.new.kb
   result = yield
-  memory_after = `ps -p #{Process::pid} -o rss`.split("\n")[1].chomp.to_i
+  memory_after = GetProcessMem.new.kb
 
   total_memory = memory_after - memory_before
   puts "#{name}: #{"%.2f" % (total_memory.to_f / 1024)} MB"
