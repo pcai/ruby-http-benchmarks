@@ -39,7 +39,7 @@ GEM
     public_suffix (5.0.0)
     puma (6.3.1)
       nio4r (~> 2.0)
-    rack (3.0.0)
+    rack (3.0.10)
     rake (13.0.6)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
